@@ -44,5 +44,8 @@ func NewEtcdClient(conf RegistryConf) (*clientv3.Client, func(), error){
 
 // NewRegistrar ... init ectd Registry
 func NewRegistrar(client *clientv3.Client) registry.Registrar {
+	if client == nil {
+		return nil
+	}
 	return etcd.New(client)
 }
