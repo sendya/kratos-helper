@@ -1,9 +1,9 @@
-package tracing_test
+package trace_test
 
 import (
 	"testing"
 
-	"github.com/sendya/kratos-helper/contrib/tracing"
+	"github.com/sendya/kratos-helper/contrib/trace"
 )
 
 type testTracing struct {
@@ -25,5 +25,5 @@ func TestInitTrace(t *testing.T) {
 		customName: "myapp",
 	}
 
-	tracing.InitTracer(trConf)
+	trace.InitTracer(trConf)
 }
