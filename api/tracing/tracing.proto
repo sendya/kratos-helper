@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-package protos.tracing.v1;
+package kratoshelper.tracing.v1;
 
 option go_package = "github.com/sendya/kratos-helper/api/tracing/tracing;tracing";
 option java_multiple_files = true;
-option java_package = "sendya.me.api.protos.tracing";
+option java_package = "sendya.me.api.kratoshelper.tracing";
 option java_outer_classname = "TracingProtoV1";
 
 message Tracing {
